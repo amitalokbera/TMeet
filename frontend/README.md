@@ -26,6 +26,7 @@ A modern, open-source video conferencing platform built with Next.js, TypeScript
 
 1. Clone the repository
 2. Install dependencies:
+
    ```bash
    npm install
    # or
@@ -35,6 +36,7 @@ A modern, open-source video conferencing platform built with Next.js, TypeScript
    ```
 
 3. Run the development server:
+
    ```bash
    npm run dev
    # or
@@ -48,6 +50,7 @@ A modern, open-source video conferencing platform built with Next.js, TypeScript
 ## Project Structure
 
 ```
+
 ├── app/
 │   ├── components/     # React components
 │   ├── providers.tsx   # App providers
@@ -76,6 +79,7 @@ MIT License
 ## Author
 
 Created by Amit Bera
+
 ```
 
 This README provides a comprehensive overview of your project, including its features, tech stack, setup instructions, and more.

@@ -15,7 +15,7 @@ export default function Header() {
           </Link>
           <nav className="flex items-center space-x-4">
             <ModeToggle />
-            <Link href="/" tabIndex={-1}>
+            <Link href="/login" tabIndex={-1}>
               <Button variant="ghost" className="text-base border-none">
                 Sign In
               </Button>

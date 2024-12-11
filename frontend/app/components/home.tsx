@@ -52,7 +52,7 @@ function Features() {
   };
 
   return (
-    <div className="flex space-x-6">
+    <div className="flex flex-col space-y-6 md:flex-row md:space-x-6 md:space-y-0">
       <Cards
         icon={icons[ONE_CLICK.ICON as keyof typeof icons]}
         title={ONE_CLICK.TITLE}
