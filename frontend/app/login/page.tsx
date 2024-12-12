@@ -10,6 +10,7 @@ export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
+  const [activeTab, setActiveTab] = useState("login");
   const router = useRouter();
 
   const handleLogin = async (e: React.FormEvent) => {
@@ -25,9 +26,15 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="container mx-auto flex items-center justify-center min-h-[calc(100vh-200px)] p-4">
-      <div className="w-full max-w-md min-h-[400px]">
-        <Tabs fullWidth size="lg">
+    <div className="flex items-center justify-center p-4 min-h-[calc(100vh-200px)]">
+      <div className="w-full max-w-md">
+        <Tabs
+          fullWidth
+          size="lg"
+          aria-label="Login and Sign Up"
+          selectedKey={activeTab}
+          onSelectionChange={(key) => setActiveTab(key.toString())}
+        >
           <Tab key="login" title="Login">
             <SignIn
               email={email}
@@ -35,6 +42,7 @@ export default function LoginPage() {
               password={password}
               setPassword={setPassword}
               handleLogin={handleLogin}
+              switchTab={() => setActiveTab("sign-up")}
             />
           </Tab>
           <Tab key="sign-up" title="Sign Up">

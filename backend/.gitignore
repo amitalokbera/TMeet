@@ -1,0 +1,24 @@
+# Misc
+.DS_Store
+*.pem
+
+# Env files
+.env*
+
+# Maven
+/target/
+/.mvn/wrapper/maven-wrapper.jar
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log
+
+# System files
+Thumbs.db
+
+# application.properties
+application.properties
