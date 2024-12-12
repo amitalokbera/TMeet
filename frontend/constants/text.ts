@@ -64,6 +64,25 @@ export const LANDING_PAGE = {
   },
 };
 
+export const DASHBOARD = {
+  TITLE: `Welcome to your ${APP_NAME} Dashboard`,
+  NEW_MEETING: {
+    TITLE: "Start a new meeting",
+    ICON: "Video",
+    BUTTON_TEXT: "Start New Meeting",
+  },
+  JOIN_MEETING: {
+    TITLE: "Join a meeting",
+    ICON: "MonitorSpeaker",
+    BUTTON_TEXT: "Join Meeting",
+  },
+  ACCOUNT_SETTING: {
+    TITLE: "Account Settings",
+    ICON: "Settings",
+    BUTTON_TEXT: "Manage Account",
+  },
+};
+
 export const THEME = {
   LIGHT: "Light",
   DARK: "Dark",

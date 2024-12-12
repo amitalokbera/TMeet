@@ -39,3 +39,13 @@ export function Cards({
     </Card>
   );
 }
+
+export function FunctionalCards({ children }: { children: React.ReactNode }) {
+  return (
+    <Card>
+      <CardBody className="p-6">
+        <div className="flex flex-col gap-4">{children}</div>
+      </CardBody>
+    </Card>
+  );
+}
