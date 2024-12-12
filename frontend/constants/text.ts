@@ -81,6 +81,16 @@ export const DASHBOARD = {
     ICON: "Settings",
     BUTTON_TEXT: "Manage Account",
   },
+  SCHEDULE_MEETING: {
+    TITLE: "Schedule a meeting",
+    ICON: "Calendar",
+    CONTENT: "You have {0} upcoming meetings today.",
+  },
+  MEETING_HISTORY: {
+    TITLE: "Meeting History",
+    ICON: "Clock",
+    CONTENT: "You have {0} meetings in the past 30 days.",
+  },
 };
 
 export const THEME = {

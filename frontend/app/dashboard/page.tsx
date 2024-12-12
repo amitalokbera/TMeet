@@ -2,7 +2,13 @@
 
 import { DASHBOARD } from "@/constants/text";
 import { Cards, FunctionalCards } from "@/components/ui/cards";
-import { NewMeeting, JoinMeeting, ManageAccount } from "./meetingComponent";
+import {
+  NewMeeting,
+  JoinMeeting,
+  ManageAccount,
+  ScheduleMeeting,
+  MeetingHistory,
+} from "./meetingComponent";
 
 export default function DashboardPage() {
   return (
@@ -16,6 +22,10 @@ export default function DashboardPage() {
             <FunctionalCards children={NewMeeting()} />
             <FunctionalCards children={JoinMeeting()} />
             <FunctionalCards children={ManageAccount()} />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 w-full">
+            <FunctionalCards children={ScheduleMeeting()} />
+            <FunctionalCards children={MeetingHistory()} />
           </div>
         </div>
       </div>
